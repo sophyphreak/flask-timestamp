@@ -6,8 +6,8 @@ from resources.timestamp import TimestampNow, TimestampSpecific
 app = Flask(__name__)
 api = Api(app)
 
-api.add_resource(TimestampNow, '/api/timestamp/')
-api.add_resource(TimestampSpecific, '/api/timestamp/<date_string>')
+api.add_resource(TimestampNow, "/api/timestamp/")
+api.add_resource(TimestampSpecific, "/api/timestamp/<date_string>")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(port=5000)
